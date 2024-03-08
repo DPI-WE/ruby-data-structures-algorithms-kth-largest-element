@@ -108,3 +108,6 @@ end
 
 ## Conclusion
 In this lesson, we've tackled the challenge of finding the kth largest element in an unsorted array. By exploring different approaches, including brute force sorting and more efficient heap-based methods, you've gained insight into algorithm design and optimization techniques crucial for software development and technical interviews.
+
+## Resources
+- [leetcode](https://leetcode.com/problems/kth-largest-element-in-an-array/)
