@@ -73,6 +73,24 @@ end
 ```
 {: .repl-test #kth_largest_element_test_3 for="kth_largest_element" title="Find the Kth Largest Element finds the 5th largest" points="1"}
 
+```ruby
+describe "Find the Kth Largest Element" do
+  it "handles a large array efficiently, suggesting O(n) time complexity" do
+    large_array = Array.new(100000) { rand(-10000..10000) }
+    k = rand(1..100)
+    
+    start_time = Time.now
+    result = find_kth_largest(large_array, k)
+    end_time = Time.now
+
+    execution_time = end_time - start_time
+
+    expect(execution_time).to be < 1 # Adjust this threshold based on expected performance
+  end
+end
+```
+{: .repl-test #kth_largest_element_test_4 for="kth_largest_element" title="Find the Kth Largest Element handles a large array efficiently, suggesting O(n) time complexity" points="1"}
+
 ## Tips and Clues for Solving the Problem
 - **Sorting**: A simple approach is to sort the array in descending order and pick the kth element. This is intuitive but may not be the most efficient in terms of time complexity.
 - **Heap**: A more sophisticated and efficient method involves using a priority queue or heap to keep track of the largest elements seen so far.
