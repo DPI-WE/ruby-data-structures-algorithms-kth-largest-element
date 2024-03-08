@@ -93,7 +93,7 @@ end
 
 ## Tips and Clues for Solving the Problem
 - **Sorting**: A simple approach is to sort the array in descending order and pick the kth element. This is intuitive but may not be the most efficient in terms of time complexity.
-- **Heap**: A more sophisticated and efficient method involves using a priority queue or heap to keep track of the largest elements seen so far.
+- **Heap**: A more sophisticated and efficient method involves using a priority queue or heap to keep track of the largest elements seen so far. Try initializing a heap (sorted array) of the first k elements in the array, then iterate through the remaining elements, adding any elements that are larger than the smallest in the heap.
 - **Edge Cases**: Consider what happens if k is larger than the array size or if the array contains duplicates. How will your solution handle these cases?
 
 ## Quiz
